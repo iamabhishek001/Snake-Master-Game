@@ -1,7 +1,7 @@
-import pygame
-import sys
 import random
 import webbrowser as wb
+import pygame
+import sys
 
 sc_wid = 1200
 sc_hei = 600
@@ -161,7 +161,6 @@ def play_page():
     snake_size = 10
     fps = 60
     num_greater = 50
-    sec = 1
     color = green
     snake_dead_text = ["Saap Mar Gaya Re Baba", "Kya Yarr Saap Maar Diya", "Saap Swargiye Ho Gaya", "Saap Ne Khudko Kaat Liya", "Saap Ka Accident Ho gaya"]
     highscore_text = ["Gazab Yarr Score Hai Tumhara", "Kya Khela Hai Yaar Gazab", "Bemisaal Hai Yarr", "Tum Toh Pro Player Ho Yarr"]
@@ -191,7 +190,6 @@ def play_page():
                         home_run = True
                         home_page()
                         exit_game = True
-
 
             gameWindow.fill(white)
 
@@ -238,7 +236,6 @@ def play_page():
                         home_run = True
                         home_page()
                         exit_game = True
-
 
             if snake_x > 1200:
                 snake_x = 0
@@ -312,7 +309,6 @@ def about_page():
                     sys.exit()
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                print(pygame.mouse.get_pos())
                 mouse_pos = pygame.mouse.get_pos()
                 for x in range(470, 724):
                     for y in range(300, 352):
@@ -379,7 +375,6 @@ def home_page():
                 sys.exit()
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                print(pygame.mouse.get_pos())
                 mouse_pos = pygame.mouse.get_pos()
         
                 for x in range(800, 1016):
@@ -518,7 +513,6 @@ def settings_page():
                     settings_run = False
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                print(pygame.mouse.get_pos(), "setting")
                 for x in range(10, 105):
                     for y in range(10, 95):
                         if mouse_pos == (x, y):
@@ -611,7 +605,6 @@ def player_page():
                 sys.exit()
     
             if event.type == pygame.MOUSEBUTTONDOWN:
-                print(mouse_pos)
 
                 for x in range(10, 101):
                     for y in range(200, 322):
